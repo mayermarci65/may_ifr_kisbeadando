@@ -2,8 +2,8 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>sensor_package</name>
-  <version>0.0.0</version>
-  <description>Autonóm Járművek és Robotok Programozás tárgyhoz kisbeadandó aláírásért</description>
+  <version>0.0.1</version>
+  <description>Autonóm Járművek és Robotok Programozása tárgyhoz kisbeadandó aláírásért</description>
   <maintainer email="mayermarci65@gmail.com">root</maintainer>
   <license>MIT License másolat</license>
 
