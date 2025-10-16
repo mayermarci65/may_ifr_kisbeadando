@@ -1,0 +1,9 @@
+# ROS 2 workspace
+/build/
+/install/
+/log/
+/.ros/
+
+# Python cache
+*.pyc
+__pycache__/
