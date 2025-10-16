@@ -88,7 +88,7 @@ graph TD
 A[sensor_package] --> B[CMakeLists.txt]
 A --> C[package.xml]
 A --> D[launch/]
-D --> D1[sfull_system.launch.py]
+D --> D1[full_system.launch.py]
 A --> E[src/]
 E --> E1[speed_sensor.cpp]
 E --> E2[speed_controller.cpp]
