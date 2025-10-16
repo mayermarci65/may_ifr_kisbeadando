@@ -1,10 +1,5 @@
 # Sebességfigyelő és Szabályozó
 
-Egy egyszerű, egész számokon alapuló ROS 2 projekt, amely bemutatja a **publisher-subscriber** kommunikáció működését autonóm járművi környezetben.
-A rendszer egy **sebességszenzor** és egy **sebességszabályozó** együttműködését modellezi, amely folyamatosan adatokat küld és fogad.
-
----
-
 ## Főbb Jellemzők
 
 - **Egész Számos Működés:**
@@ -62,27 +57,27 @@ class B topic;
 
 ##  Telepítés és Futtatás
 
-###  Fordítás
+###  Build
 
 Navigálj a workspace-be és fordítsd le a csomagot:
 
 ```bash
-cd ~/may_ifr_kisbeadando
+cd ~/ros2_ws
 ```
 ```bash
 colcon build --packages-select sensor_package 
 ```
-### Rendszer indítása
+### Source
 
 ```bash
   source install/setup.bash
 ```
-### Indítás launch file-al
+### Launch
 
 ```bash
-   ros2 launch sensor_package speed_control.launch.py
+   ros2 launch sensor_package full_system.launch.py
 ```
- A sebesség minden másodpercben növekszik, a controller a beérkező adatokat feldolgozza, a listener pedig naplózza azokat. 
+A sebesség minden másodpercben növekszik, a controller publish-eli. Párhuzamosan a /speed_listener is fogadja a sebességet.
 
 ---
 
@@ -93,7 +88,7 @@ graph TD
 A[sensor_package] --> B[CMakeLists.txt]
 A --> C[package.xml]
 A --> D[launch/]
-D --> D1[speed_control.launch.py]
+D --> D1[sfull_system.launch.py]
 A --> E[src/]
 E --> E1[speed_sensor.cpp]
 E --> E2[speed_controller.cpp]
