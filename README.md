@@ -59,7 +59,7 @@ class B topic;
 
 ###  Build
 
-Navigálj a workspace-be és fordítsd le a csomagot:
+Workspace-be navigálás és lefordítás
 
 ```bash
 cd ~/ros2_ws
@@ -77,7 +77,7 @@ colcon build --packages-select sensor_package
 ```bash
    ros2 launch sensor_package full_system.launch.py
 ```
-A sebesség minden másodpercben növekszik, a controller publish-eli. Párhuzamosan a '/speed_listener' is fogadja a sebességet.
+A sebesség minden másodpercben növekszik, a controller publish-eli. Párhuzamosan a `/speed_listener` is fogadja a sebességet.
 
 ---
 
