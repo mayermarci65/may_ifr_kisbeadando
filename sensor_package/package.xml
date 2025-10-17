@@ -5,7 +5,7 @@
   <version>0.0.1</version>
   <description>Autonóm Járművek és Robotok Programozása tárgyhoz kisbeadandó aláírásért</description>
   <maintainer email="mayermarci65@gmail.com">root</maintainer>
-  <license>MIT License másolat</license>
+  <license>GNU General Public License V3 egyetemi másolat beadandóhoz</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
