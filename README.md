@@ -85,11 +85,11 @@ A sebesség minden másodpercben növekszik, a controller publish-eli. Párhuzam
 
 ```mermaid
 graph TD
-A[sensor_package] --> B[CMakeLists.txt]
-A --> C[package.xml]
-A --> D[launch/]
+A[may_ifr_kisbeadando] --> B[sensor_package]
+B --> C[package.xml]
+B --> D[launch/]
 D --> D1[full_system.launch.py]
-A --> E[src/]
+B --> E[src/]
 E --> E1[speed_sensor.cpp]
 E --> E2[speed_controller.cpp]
 E --> E3[speed_listener.cpp]
