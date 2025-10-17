@@ -1,17 +1,17 @@
 # Sebességfigyelő és Szabályozó
 
-## Főbb Jellemzők
+## Főbb jellemzők
 
-- **Egész Számos Működés:**
+- **Egész számos működés:**
 A csomag kizárólag `Int32` típusú adatokat használ, elkerülve a lebegőpontos pontatlanságokat.
 
-- **Egyszerű, Determinisztikus Viselkedés:**
+- **Egyszerű, determinisztikus viselkedés:**
 A sebesség minden másodpercben kiszámíthatóan növekszik, és a vezérlő valós időben reagál.
 
-- **Valós Idejű Publikáció és Feliratkozás:**
+- **Valós idejű publikáció és feliratkozás:**
 A node-ok közti kommunikációt ROS 2 topicok biztosítják, a `std_msgs/msg/Int32` típus használatával.
 
-- **Moduláris Felépítés:**
+- **Moduláris felépítés:**
 Három, jól elkülönített node kezeli az érzékelést, vezérlést és megfigyelést.
 
 ---
@@ -77,7 +77,7 @@ colcon build --packages-select sensor_package
 ```bash
    ros2 launch sensor_package full_system.launch.py
 ```
-A sebesség minden másodpercben növekszik, a controller publish-eli. Párhuzamosan a `/speed_listener` is fogadja a sebességet.
+A sebesség minden másodpercben növekszik, a controller publish-eli. Párhuzamosan a `/speed_listener` is fogadja és kiírja a sebességet.
 
 ---
 
