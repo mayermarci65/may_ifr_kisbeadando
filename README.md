@@ -86,6 +86,8 @@ A sebesség minden másodpercben növekszik, a controller publish-eli. Párhuzam
 ```mermaid
 graph TD
 A[may_ifr_kisbeadando] --> B[sensor_package]
+A --> F[img]
+F --> F1[speed_sensor.png]
 B --> C[package.xml]
 B --> D[launch/]
 D --> D1[full_system.launch.py]
